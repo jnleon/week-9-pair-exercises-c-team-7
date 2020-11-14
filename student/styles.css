@@ -8,7 +8,7 @@ nav ul {
     list-style: none;
     justify-content: space-between; 
     padding-left: 2vh;   
-    padding-top: 1vh;
+    padding-top: 2vh;
   
 
 }
@@ -21,14 +21,16 @@ nav ul li {
     
   }
 
-  nav ul li a {
+  /*
+  BUTTTONNSSS
+   */
+
+   nav ul li a {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-
   }
-
 
 header{
     display:flex;
@@ -65,10 +67,7 @@ main div h2{
 }
 
 main{
-    display: flex;
     grid-area:popsiclestuffmiaw;
-    align-items: center;
-    flex-direction: row;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 
@@ -94,6 +93,11 @@ main, section, footer {
     padding: 20px;
   
 
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
 }
 
 .store-button { /* used for store link in "Get refreshed" section */
@@ -146,6 +150,7 @@ body {
 #race>p{
     grid-area:racetext1;
     justify-content: center;
+    padding-bottom: 20px;
 
 }
 #refreshed{
@@ -154,6 +159,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+#refreshed>p{
+    padding-bottom: 1vh;
+}
+
+
 footer{
  grid-area: footer;
  display: flex;
@@ -164,6 +174,54 @@ footer{
 html{
     margin-left : 10px;
     margin-right : 10px;
+}
+
+
+
+
+/* 
+********CONTACT US STUFF ********
+
+| | | | | | | | | | | | | | | | | 
+V V V V V V V V V V V V V V V V V
+*/
+
+#contact-us{
+    padding-left: 0;
+}
+#contact-usm #contact-us{
+padding-top: 0;
+}
+#labelsforms{
+    display: flex;
+    padding-top: 0;
+    font-size: large;
+    
+}
+#labelsforms input ,select{
+    margin-bottom: 2vh;
+    flex-basis: 2vh;
+}
+
+#labelsforms label{
+    padding-bottom: 0.5vh;
+}
+
+#favoritepopsicle{
+    display: flex;
+   width: 100%;
+}
+
+.submit-button { /* used for store link in "Get refreshed" section */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00afef;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 50%;
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -183,6 +241,7 @@ html{
   
   nav ul {
     padding-left: 0;   
+    padding-top: 0;
   
 }
   nav ul li {
@@ -214,5 +273,25 @@ main{
      "photo"
      "popsiclestuffmiaw";
      grid-gap: 10px;
+}
+main div{
+    flex-direction: column;
+    padding-top: 0;
+}
+
+/* 
+********CONTACT US STUFF ********
+
+| | | | | | | | | | | | | | | | | 
+V V V V V V V V V V V V V V V V V
+*/
+
+#labelsforms{
+    display: flex;
+    font-size: s;
+}
+#buttonThing{
+padding-top: 4vh;
+
 }
 }

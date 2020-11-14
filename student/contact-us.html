@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+
+
+<body>
+
+    <header>
+        <img class="picture" alt="TEPopsicle" src="/images/te-pops.png" />
+        <h1>Tech Elevator Popsicles</h1>
+    </header>
+
+    <nav id="buttons">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main id='contact-usm'>
+        <div id='contact-us'>
+
+            <form method="POST" action="/api/reservation">
+
+                <div id="labelsforms">
+
+                <h2 id="contact-us">Contact Us</h2>
+
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name" />
+
+                    <label for="numberOfGuests">How did you hear us? </label>
+                    <select id="cars" name="cars">
+                        <option value="popmonth">Popsicle Monthly</option>
+                        <option value="cow">Cow Moooooo</option>
+                        <option value="cat">Cat Miaw Miaw Miaw</option>
+                        <option value="Snake">Snakey SssSssssSSs SSs</option>
+                        <option value="Dog">Doggie Woof Woof Woof</option>
+                        <option value="Wolf">Wolfie Auuuuuuuu</option>
+                        <option value="Bird">Birdy Pii Pii Pii Pii</option>
+
+                    </select>
+
+                    <label for="favoritepopsicle">What color is your favorite popsicle? </label>
+                    <input id="favoritepopsicle" name="favoritepopsicle" type="color" />
+
+                    <label for="leaveComments">Please let us know any comments you have: </label>
+                    <textarea id="commentSection" name="reservationTime" type="text" />
+                    </textarea>
+                </div>
+                <div id="buttonThing">
+                    <input type="submit" class="submit-button" />
+                </div>
+            </form>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Tech Elevator 2020 </p>
+    </footer>
+
+</body>
+
+</html>
