@@ -3,38 +3,55 @@ body {
     background-color: #87CEEB;
 }
 
-nav ul {
+#buttons ul {
     display: flex;
     list-style: none;
     justify-content: space-between; 
-    padding-left: 2vh;   
-    padding-top: 2vh;
-  
+    padding-left: 5vh;   
+    padding-top: 1vh;
+    grid-area: links;
+}
+
+  .nav-buttons{
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #00afef;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: 28%;
+}
+
+.nav-buttons:hover{
+    color: #000000;
+    background-color: #0ebfff;
+}
+
+.store-button { /* used for store link in "Get refreshed" section */
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #00afef;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: 30%;
+}
+
+.store-button:hover{
+    color: #000000;
+    background-color: #29c6ff;
 
 }
-nav ul li {
-    background-color: #00afef;
-    width: 28%;
-    text-align: center;
-    border-radius: 0.2rem;
-    padding: 10px;
-    
-  }
-
-  /*
-  BUTTTONNSSS
-   */
-
-   nav ul li a {
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-  }
 
 header{
     display:flex;
-    max-width: 80%;
 }
 
 header img {
@@ -42,6 +59,7 @@ header img {
     width: auto;
     grid-area: header;
 }
+
 header h1 {
     padding-left: 20px;
     padding-top: 10px;
@@ -49,18 +67,17 @@ header h1 {
 }
 
 .popstuff{
-display:flex;
-align-items: center;
-align-items: center;
-grid-area: randoms;
-
+    display:flex;
+    align-items: center;
+    grid-area: randoms;
 }
 
 main div li{
-display: inline;
-padding-left: 40px;
-padding-bottom: 10px;
-}
+    display: inline;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    }
+
 main div h2{
     padding-left: 10px;
     grid-area: didyouknow;
@@ -79,8 +96,8 @@ main{
 main img {
     width: 100%;
     grid-area: photo;
-
 }
+
 main div li:before {
     content: '🍡';
     margin-left: -31px;
@@ -91,31 +108,13 @@ main, section, footer {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 20px;
-  
-
 }
+
 main div{
     display: flex;
     flex-direction: column;
-    padding-top: 5vh;
 }
 
-.store-button { /* used for store link in "Get refreshed" section */
-    padding: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
-    color: #000000;
-    background-color: #00afef;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-/*idk*/
-    width: 30%;
-    line-height: 20px;
-
-}
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,6 +134,7 @@ body {
      "bluepop racetext1";
      grid-gap: 10px;
 }
+
 #BluePop{
     grid-area: bluepop;
 }
@@ -144,60 +144,61 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-    
 }
+
 #race>p{
     grid-area:racetext1;
     justify-content: center;
     padding-bottom: 20px;
-
 }
+
 #refreshed{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #refreshed>p{
     padding-bottom: 1vh;
 }
 
-
 footer{
- grid-area: footer;
- display: flex;
- height: 25%;
- align-items: center;
- 
+    grid-area: footer;
+    display: flex;
+    height: 25%;
+    align-items: center;
 }
+
 html{
     margin-left : 10px;
     margin-right : 10px;
 }
 
-
-
-
+#miaw{
+    padding-top: 5vh;
+}
 /* 
 ********CONTACT US STUFF ********
 
 | | | | | | | | | | | | | | | | | 
 V V V V V V V V V V V V V V V V V
 */
-
 #contact-us{
     padding-left: 0;
 }
+
 #contact-usm #contact-us{
-padding-top: 0;
+    padding-top: 0;
 }
+
 #labelsforms{
     display: flex;
     padding-top: 0;
     font-size: large;
     
 }
+
 #labelsforms input ,select{
     margin-bottom: 2vh;
     flex-basis: 2vh;
@@ -212,16 +213,22 @@ padding-top: 0;
    width: 100%;
 }
 
-.submit-button { /* used for store link in "Get refreshed" section */
+.submit-button { 
     padding: 10px;
+    padding-left: 10px;
     border-radius: 5px;
     color: white;
     background-color: #00afef;
     font-weight: bold;
-    text-transform: uppercase;
     text-decoration: none;
+    display: inline-block;
     width: 50%;
+    text-align: center;
+    margin-top: 2vh;
+}
 
+.submit-button:hover{
+    background-color: #29c6ff;
 }
 
 @media only screen and (max-width: 800px) {
@@ -239,29 +246,16 @@ padding-top: 0;
      grid-gap: 5px;
   }
   
-  nav ul {
+#buttons ul {
     padding-left: 0;   
     padding-top: 0;
-  
 }
-  nav ul li {
-    width: 28%;
-    padding: 0.5%;
-    flex-basis: 30%;
-    height: 50%;
-
-  }
-  nav ul li a {
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    
-  }
+ 
   html{
     margin-left : 2px;
     margin-right : 2px;
 }
+
 main{
     display: flex;
     grid-area:popsiclestuffmiaw;
@@ -274,8 +268,8 @@ main{
      "popsiclestuffmiaw";
      grid-gap: 10px;
 }
-main div{
-    flex-direction: column;
+
+#miaw{
     padding-top: 0;
 }
 
@@ -285,13 +279,13 @@ main div{
 | | | | | | | | | | | | | | | | | 
 V V V V V V V V V V V V V V V V V
 */
-
 #labelsforms{
     display: flex;
     font-size: s;
 }
-#buttonThing{
-padding-top: 4vh;
 
+#buttonThing{
+    padding-top: 4vh;
 }
+
 }
